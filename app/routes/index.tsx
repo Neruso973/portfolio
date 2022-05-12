@@ -7,7 +7,7 @@ import { useOptionalUser } from "~/utils";
 import github from "../../public/img/git.png";
 import linkedin from "../../public/img/linkedin.png";
 import mail from "../../public/img/mail.png";
-import cv from "../../public/img/logocv.svg";
+import cv from "../../public/img/logocv.png";
 import ArrowIcon from "~/svg/arrowIcon";
 import About from "../components/about";
 // import curiculum from "../../public/img/curiculum.pdf"
