@@ -1,4 +1,4 @@
-import About from "~/components/about";
+import About from "~/components/pages/about";
 import Footer from "~/components/structures/footer";
 import Navbar from "~/components/structures/navbar";
 

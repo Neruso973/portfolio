@@ -1,10 +1,10 @@
 import github from "../../../public/img/git.png";
 import linkedin from "../../../public/img/linkedin.png";
-import cv from "../../../public/img/logocv.svg";
+import cv from "../../../public/img/logocv.png";
 
 function Footer() {
   return (
-    <footer className="flex h-32 w-[99vw] space-x-[50%] bg-[#1B2271] text-[#18ADC2]">
+    <footer className="flex h-32 w-[100vw] space-x-[50%] bg-[#1B2271] text-[#18ADC2]">
       <div>
         <h1 className="mt-6 ml-24 text-2xl font-semibold text-[#18ADC2]">
           Site web designé et réalisé avec <br /> Remix par Nelson NTEPP

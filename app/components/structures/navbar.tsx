@@ -27,7 +27,7 @@ function Navbar() {
         showLinks ? "showNav" : "hideNav"
       } h-screen w-[15%] bg-white`}
     >
-      <Link to="/admin-dashboard">
+      <Link to="/login">
         <img
           src={!isHover ? logo : logoRevert}
           alt="logo de Nelson"
@@ -41,19 +41,19 @@ function Navbar() {
           <div className="navLinks">
             <div className="flex-col">
               <ul className="cursor-pointer flex-col text-center text-2xl text-white">
-                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] text-white transition-all duration-300 ease-in-out hover:scale-110">
+                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] py-1 text-white transition-all duration-300 ease-in-out hover:scale-110">
                   <Link to="/">Accueil</Link>
                 </li>
-                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] text-white transition-all duration-300 ease-in-out hover:scale-110">
+                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] py-1 text-white transition-all duration-300 ease-in-out hover:scale-110">
                   <Link to="/about">A Propos</Link>
                 </li>
-                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] text-white transition-all duration-300 ease-in-out hover:scale-110">
+                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] py-1 text-white transition-all duration-300 ease-in-out hover:scale-110">
                   <Link to="/skills">Compétences</Link>
                 </li>
-                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] text-white transition-all duration-300 ease-in-out hover:scale-110">
+                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] py-1 text-white transition-all duration-300 ease-in-out hover:scale-110">
                   <Link to="/projects">Portfolio</Link>
                 </li>
-                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] text-white transition-all duration-300 ease-in-out hover:scale-110">
+                <li className="mx-auto my-14 h-11 w-[80%] cursor-pointer rounded-full bg-[#0073DD] py-1 text-white transition-all duration-300 ease-in-out hover:scale-110">
                   <Link to="/cv">Curiculum</Link>
                 </li>
               </ul>

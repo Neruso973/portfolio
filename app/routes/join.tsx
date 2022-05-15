@@ -109,7 +109,7 @@ export default function Join() {
                 required
                 autoFocus={true}
                 name="email"
-                type="email"
+                type="text"
                 autoComplete="email"
                 aria-invalid={actionData?.errors?.email ? true : undefined}
                 aria-describedby="email-error"

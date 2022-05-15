@@ -9,8 +9,8 @@ import linkedin from "../../public/img/linkedin.png";
 import mail from "../../public/img/mail.png";
 import cv from "../../public/img/logocv.png";
 import ArrowIcon from "~/svg/arrowIcon";
-import About from "../components/about";
-// import curiculum from "../../public/img/curiculum.pdf"
+import About from "../components/pages/about";
+import NameTitle from "~/svg/title/name-title";
 
 export default function Index() {
   const scrollRef = useRef<any>();
@@ -23,9 +23,7 @@ export default function Index() {
     <>
       <main className="h-screen bg-[url('/img/bg.svg')]">
         <div className="border-1 absolute top-52 left-[30rem] m-auto h-3/6 w-2/4 rounded-3xl border-solid bg-white p-8 opacity-[76%] shadow-2xl">
-          <h1 className="text-center text-4xl font-bold text-[#1B2271]">
-            Nelson NTEPP <br /> Développeur web Full-Stack
-          </h1>
+          <NameTitle />
           <div className="my-8 mx-auto h-1 w-3/4 rounded-sm bg-[#1B2271]"></div>
           <h2 className="p-8 text-center text-xl font-semibold text-[#1B2271]">
             Web Developer, following my professional retraining at the Wild Code

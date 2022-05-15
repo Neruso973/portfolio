@@ -2,7 +2,8 @@ import Home from "~/svg/home";
 import Mail from "~/svg/mail";
 import Phone from "~/svg/phone";
 import RoundedArrow from "~/svg/roundedArrow";
-import photo from "../../public/img/photoPro.jpg";
+import AboutTitle from "~/svg/title/about-title";
+import photo from "../../../public/img/photoPro.jpg";
 
 function About() {
   const date = new Date().getFullYear();
@@ -15,9 +16,7 @@ function About() {
       <div>
         <div className="mt-12 ml-[30%] flex">
           <RoundedArrow />
-          <h2 className="ml-12 text-3xl font-bold text-[#1B2271]">
-            Actuelement en poste chez Guarani
-          </h2>
+          <AboutTitle />
         </div>
         <div className="flex">
           <img

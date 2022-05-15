@@ -1,38 +1,43 @@
-datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
-}
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
   provider = "prisma-client-js"
 }
 
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
 model User {
-  id    String @id @default(cuid())
-  email String @unique
+  id       Int    @id @default(autoincrement())
+  username String @unique
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   password Password?
-  notes    Note[]
 }
 
 model Password {
   hash String
 
-  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  userId String @unique
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId Int  @unique
 }
 
-model Note {
-  id    String @id @default(cuid())
-  title String
-  body  String
+model Project {
+  id          Int     @id @default(autoincrement())
+  name        String  @db.VarChar(255)
+  screen      String  @db.VarChar(255)
+  link        String? @db.VarChar(255)
+  github      String? @db.VarChar(255)
+  description String  @db.VarChar(255)
+  technos     Json
+}
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  userId String
+model Techno {
+  id          Int    @id @default(autoincrement())
+  techno_name String @db.VarChar(255)
 }

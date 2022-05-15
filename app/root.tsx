@@ -19,7 +19,10 @@ import { getUser } from "./session.server";
 import logo from "../public/img/Logo.svg";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: tailwindStylesheetUrl }, {rel:"icon", href:`${logo}`}];
+  return [
+    { rel: "stylesheet", href: tailwindStylesheetUrl },
+    { rel: "icon", href: `${logo}` },
+  ];
 };
 
 export const meta: MetaFunction = () => ({
