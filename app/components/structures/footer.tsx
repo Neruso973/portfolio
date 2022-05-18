@@ -1,4 +1,4 @@
-import github from "../../../public/img/git.png";
+import github from "../../../public/img/github.png";
 import linkedin from "../../../public/img/linkedin.png";
 import cv from "../../../public/img/logocv.png";
 

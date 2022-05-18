@@ -16,9 +16,9 @@ interface FrontProps {
 
 function Front({ onClick }: FrontProps) {
   return (
-    <div className="border-1 absolute top-12 left-12 m-auto h-[40rem] w-[40%] rounded-3xl border-solid bg-white p-8 shadow-2xl">
+    <div className="border-1 m-auto mt-12 ml-16 h-[42rem] w-[42rem] rounded-3xl border-solid bg-white p-8 shadow-2xl">
       <FrontTitle />
-      <div className="flex flex-col text-[#1B2271]">
+      <div className="flex flex-col text-xl text-[#1B2271]">
         <h2 className="my-6">Languages de programation :</h2>
         <div className="mx-auto flex space-x-16">
           <img src={html} alt="html logo" className="w-20 " />
@@ -39,7 +39,7 @@ function Front({ onClick }: FrontProps) {
         </div>
       </div>
       <button
-        className="absolute bottom-2 my-8 ml-40 h-11 w-[40%] cursor-pointer rounded-full bg-[#0073DD] py-1 text-xl text-white transition-all duration-300 ease-in-out hover:scale-110"
+        className="absolute top-[74%] my-8 ml-36 h-11 w-[40%] cursor-pointer rounded-full bg-[#0073DD] py-1 text-xl text-white transition-all duration-300 ease-in-out hover:scale-110"
         onClick={onClick}
       >
         Back-end

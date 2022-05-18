@@ -4,7 +4,7 @@ import Footer from "~/components/structures/footer";
 import Navbar from "~/components/structures/navbar";
 
 import { useOptionalUser } from "~/utils";
-import github from "../../public/img/git.png";
+import github from "../../public/img/github.png";
 import linkedin from "../../public/img/linkedin.png";
 import mail from "../../public/img/mail.png";
 import cv from "../../public/img/logocv.png";
