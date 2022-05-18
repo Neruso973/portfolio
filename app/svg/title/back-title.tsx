@@ -1,6 +1,6 @@
 function BackTitle() {
   return (
-    <div>
+    <div className="ml-[23%]">
       <svg
         width="307"
         height="45"
