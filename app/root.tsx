@@ -12,7 +12,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-
+import { ToastContainer } from 'react-toastify';
+import notification from 'react-toastify/dist/ReactToastify.css';
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
 
@@ -21,6 +22,7 @@ import logo from "../public/img/Logo.svg";
 export const links: LinksFunction = () => {
   return [
     { rel: "stylesheet", href: tailwindStylesheetUrl },
+    { rel: "stylesheet", href: notification },
     { rel: "icon", href: `${logo}` },
   ];
 };
@@ -53,6 +55,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <ToastContainer />
       </body>
     </html>
   );

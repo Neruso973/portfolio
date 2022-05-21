@@ -1,7 +1,7 @@
 import React from "react";
 
-function Dashboard() {
+function NewProject() {
   return <div>Dashboard</div>;
 }
 
-export default Dashboard;
+export default NewProject;

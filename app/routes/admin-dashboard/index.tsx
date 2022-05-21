@@ -1,10 +1,12 @@
 import { LoaderFunction } from "@remix-run/server-runtime";
+import NewProject from "~/components/pages/new-project";
 import Unauthorized from "~/components/pages/unauthorized";
 import Footer from "~/components/structures/footer";
 import Navbar from "~/components/structures/navbar";
+import { successNotification } from "~/notifications/notifications";
 import { requireUserId } from "~/session.server";
 
-export const loader: LoaderFunction = async ({ request, params }) => {
+export const loader: LoaderFunction = async ({ request }) => {
   const isAuth = await requireUserId(request);
 
   if (!isAuth) {
@@ -18,12 +20,14 @@ export const loader: LoaderFunction = async ({ request, params }) => {
 };
 
 function Admin() {
+  successNotification(`welcome back`);
+
   return (
     <div className="bg-[#EEE]">
       <div className="flex">
         <Navbar />
         <div className="w-[85%]">
-          <h1>coucou</h1>
+          <NewProject />
         </div>
       </div>
       <Footer />

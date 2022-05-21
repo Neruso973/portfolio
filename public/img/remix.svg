@@ -18,7 +18,7 @@
 </g>
 <defs>
 <filter id="filter0_dd_351_34" x="185" y="178" width="242.715" height="268.065" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
 <feGaussianBlur stdDeviation="21"/>
@@ -34,7 +34,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_351_34" result="shape"/>
 </filter>
 <filter id="filter1_dd_351_34" x="788.148" y="243.524" width="215.852" height="194.22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
 <feGaussianBlur stdDeviation="14"/>
@@ -50,7 +50,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_351_34" result="shape"/>
 </filter>
 <filter id="filter2_dd_351_34" x="507.602" y="243.411" width="273.634" height="189.724" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
 <feGaussianBlur stdDeviation="14"/>
@@ -66,7 +66,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_351_34" result="shape"/>
 </filter>
 <filter id="filter3_dd_351_34" x="360.766" y="239.298" width="192.493" height="193.228" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
 <feGaussianBlur stdDeviation="14"/>
@@ -82,7 +82,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_351_34" result="shape"/>
 </filter>
 <filter id="filter4_dd_351_34" x="740.302" y="194.056" width="103.526" height="239.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
 <feGaussianBlur stdDeviation="14"/>

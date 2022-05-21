@@ -12,6 +12,10 @@ import { verifyLogin } from "~/models/user.server";
 import { safeRedirect, validateEmail } from "~/utils";
 import Navbar from "~/components/structures/navbar";
 import Footer from "~/components/structures/footer";
+import {
+  errorNotification,
+  successNotification,
+} from "~/notifications/notifications";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userId = await getUserId(request);
@@ -90,8 +94,10 @@ export default function LoginPage() {
   React.useEffect(() => {
     if (actionData?.errors?.username) {
       usernameRef.current?.focus();
+      errorNotification(`${actionData.errors.username}`);
     } else if (actionData?.errors?.password) {
       passwordRef.current?.focus();
+      errorNotification(`${actionData.errors.password}`);
     }
   }, [actionData]);
 
@@ -127,11 +133,6 @@ export default function LoginPage() {
                     aria-describedby="username-error"
                     className="ml-28 mt-6 w-72 rounded-3xl bg-[#EEE] px-2 py-1 text-lg"
                   />
-                  {actionData?.errors?.username && (
-                    <div className="pt-1 text-red-700" id="username-error">
-                      {actionData.errors.username}
-                    </div>
-                  )}
                 </div>
               </div>
 
@@ -154,11 +155,6 @@ export default function LoginPage() {
                     aria-describedby="password-error"
                     className="my-6 ml-28 w-72 rounded-3xl  bg-[#EEE] px-2 py-1 text-lg"
                   />
-                  {actionData?.errors?.password && (
-                    <div className="pt-1 text-red-700" id="password-error">
-                      {actionData.errors.password}
-                    </div>
-                  )}
                 </div>
               </div>
 
