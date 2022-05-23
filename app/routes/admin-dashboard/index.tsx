@@ -3,7 +3,6 @@ import NewProject from "~/components/pages/new-project";
 import Unauthorized from "~/components/pages/unauthorized";
 import Footer from "~/components/structures/footer";
 import Navbar from "~/components/structures/navbar";
-import { successNotification } from "~/notifications/notifications";
 import { requireUserId } from "~/session.server";
 
 export const loader: LoaderFunction = async ({ request }) => {
@@ -20,8 +19,6 @@ export const loader: LoaderFunction = async ({ request }) => {
 };
 
 function Admin() {
-  successNotification(`welcome back`);
-
   return (
     <div className="bg-[#EEE]">
       <div className="flex">

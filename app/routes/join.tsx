@@ -5,7 +5,6 @@ import type {
 } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 import { Form, Link, useActionData, useSearchParams } from "@remix-run/react";
-import * as React from "react";
 
 import { getUserId, createUserSession } from "~/session.server";
 
@@ -15,6 +14,7 @@ import {
   errorNotification,
   successNotification,
 } from "~/notifications/notifications";
+import { useEffect, useRef } from "react";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userId = await getUserId(request);
@@ -84,10 +84,10 @@ export default function Join() {
   const [searchParams] = useSearchParams();
   const redirectTo = searchParams.get("redirectTo") ?? undefined;
   const actionData = useActionData() as ActionData;
-  const usernameRef = React.useRef<HTMLInputElement>(null);
-  const passwordRef = React.useRef<HTMLInputElement>(null);
+  const usernameRef = useRef<HTMLInputElement>(null);
+  const passwordRef = useRef<HTMLInputElement>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (actionData?.errors?.username) {
       usernameRef.current?.focus();
       errorNotification(`${actionData.errors.username}`);
@@ -95,6 +95,9 @@ export default function Join() {
       passwordRef.current?.focus();
       errorNotification(`${actionData.errors.password}`);
     }
+    return () => {
+      successNotification("Welcome back Admin!");
+    };
   }, [actionData]);
 
   const success = async () => {

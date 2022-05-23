@@ -99,6 +99,7 @@ export default function LoginPage() {
       passwordRef.current?.focus();
       errorNotification(`${actionData.errors.password}`);
     }
+    return () => successNotification("Welcome back Admin!");
   }, [actionData]);
 
   return (
