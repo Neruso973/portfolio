@@ -95,9 +95,6 @@ export default function Join() {
       passwordRef.current?.focus();
       errorNotification(`${actionData.errors.password}`);
     }
-    return () => {
-      successNotification("Welcome back Admin!");
-    };
   }, [actionData]);
 
   const success = async () => {

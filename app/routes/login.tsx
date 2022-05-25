@@ -12,10 +12,7 @@ import { verifyLogin } from "~/models/user.server";
 import { safeRedirect, validateEmail } from "~/utils";
 import Navbar from "~/components/structures/navbar";
 import Footer from "~/components/structures/footer";
-import {
-  errorNotification,
-  successNotification,
-} from "~/notifications/notifications";
+import { errorNotification } from "~/notifications/notifications";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userId = await getUserId(request);
@@ -99,7 +96,6 @@ export default function LoginPage() {
       passwordRef.current?.focus();
       errorNotification(`${actionData.errors.password}`);
     }
-    return () => successNotification("Welcome back Admin!");
   }, [actionData]);
 
   return (
